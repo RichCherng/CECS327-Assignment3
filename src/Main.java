@@ -16,10 +16,12 @@ public class Main {
 			operators[i].start();
 		}
 
+		System.out.printf("        \t%20s %20s %20s %20s\n", "Search Average", "Replace Average", "STD Search", "STD Replace");
+		System.out.println("----------------------------------------------------------------------------------------------------");
 		for(int i = 0; i < operators.length; i++){
 			try {
 				operators[i].join();
-				System.out.println("Thread "+ i);
+				System.out.print("Thread "+ i + "\t");
 				((Operator) operators[i]).stat();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

@@ -88,10 +88,12 @@ public class Operator extends Thread{
 		stdReplaceMean /= replaceWait.size();
 		stdReplaceMean = (float) Math.sqrt(stdReplaceMean);
 
-		System.out.println("\tAverage lock time for search: " + searchAvg + " ns");
-		System.out.println("\tAverage lock time for search & replace: " + replaceAvg + "ns");
-		System.out.println("\tSTD lock time for search: " + stdSearchMean + "ns");
-		System.out.println("\tSTD lock time for search & replace: " + stdReplaceMean + "ns");
+//		System.out.println("\tAverage lock time for search: " + searchAvg + " ns");
+//		System.out.println("\tAverage lock time for search & replace: " + replaceAvg + "ns");
+//		System.out.println("\tSTD lock time for search: " + stdSearchMean + "ns");
+//		System.out.println("\tSTD lock time for search & replace: " + stdReplaceMean + "ns");
+		System.out.printf("%20.2f %20.2f %20.2f %20.2f\n", searchAvg, replaceAvg, stdSearchMean, stdReplaceMean);
+		System.out.println("----------------------------------------------------------------------------------------------------");
 	}
 
 	public void run(){
