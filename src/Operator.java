@@ -92,8 +92,8 @@ public class Operator extends Thread{
 //		System.out.println("\tAverage lock time for search & replace: " + replaceAvg + "ns");
 //		System.out.println("\tSTD lock time for search: " + stdSearchMean + "ns");
 //		System.out.println("\tSTD lock time for search & replace: " + stdReplaceMean + "ns");
-		System.out.printf("%20.2f %20.2f %20.2f %20.2f\n", searchAvg, replaceAvg, stdSearchMean, stdReplaceMean);
-		System.out.println("----------------------------------------------------------------------------------------------------");
+		System.out.printf("%10.2f %20.2f %20.2f %20.2f\n", searchAvg, replaceAvg, stdSearchMean, stdReplaceMean);
+		System.out.println("----------------------------------------------------------------------------------------");
 	}
 
 	public void run(){

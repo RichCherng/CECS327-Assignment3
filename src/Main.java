@@ -16,8 +16,8 @@ public class Main {
 			operators[i].start();
 		}
 
-		System.out.printf("        \t%20s %20s %20s %20s\n", "Search Average", "Replace Average", "STD Search", "STD Replace");
-		System.out.println("----------------------------------------------------------------------------------------------------");
+		System.out.printf("        \t%10s %20s %20s %20s\n", "Search Average", "Replace Average", "STD Search", "STD Replace");
+		System.out.println("----------------------------------------------------------------------------------------");
 		for(int i = 0; i < operators.length; i++){
 			try {
 				operators[i].join();
